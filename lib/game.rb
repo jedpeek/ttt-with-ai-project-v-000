@@ -28,10 +28,6 @@ class Game
       @player_2
     end
 
-    def token
-      Player.token
-    end
-
 
   def current_player
     count = 0
