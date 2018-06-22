@@ -57,7 +57,7 @@ class Game
 end
 end
 
-def full?(board)
+def full?
   self.board.each do |i|
     if i == " "
       return false
@@ -66,11 +66,11 @@ def full?(board)
     return true
 end
 
-def draw?(board)
-  if won?(board) != false
+def draw?
+  if won?(self.board) != false
     return false
   end
-  return full?(board)
+  return full?(self.board)
 end
 
 def over?(board)
