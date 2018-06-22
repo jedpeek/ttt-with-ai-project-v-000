@@ -29,7 +29,8 @@ class Game
     end
 
     def token
-      
+      Player.token
+    end
 
 
   def current_player
