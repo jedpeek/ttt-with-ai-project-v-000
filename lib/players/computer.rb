@@ -8,6 +8,7 @@ module Players
       until board.valid_move?(move)
         move(board)
     end
+    move
   end
   end
 end
