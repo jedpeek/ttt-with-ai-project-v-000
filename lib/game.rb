@@ -74,7 +74,7 @@ def draw?
 end
 
 def over?
-  if won?(self.board) != false
+  if won? != false
     return true
   end
 return draw?(self.board)
