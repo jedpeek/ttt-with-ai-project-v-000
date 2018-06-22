@@ -29,7 +29,7 @@ class Game
     end
 
 
-  def current_player.token
+  def current_player
     count = 0
     self.board.cells.each do |board|
       if board != " "
