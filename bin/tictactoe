@@ -8,6 +8,7 @@ input = gets.strip
 if input == "1"
   game = Game.new(Players::Human.new("X"), Players::Computer.new("O"), Board.new)
   game.play
+  game.board.display
 elsif input == "2"
   game = Game.new(Players::Human.new("X"), Players::Human.new("O"), Board.new)
   game.play
