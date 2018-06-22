@@ -50,7 +50,7 @@ attr_accessor :cells
   end
 
   def update(user_input, player = "X")
-  self.cells[user_input.to_i - 1] = player if  !valid_move?(user_input)
+  self.cells[user_input.to_i - 1] = player if  valid_move?(user_input)
   end
 
 end
