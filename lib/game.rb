@@ -40,7 +40,7 @@ class Game
         count += 1
       end
       end
-      count % 2 == 0 ? Player.token("X") : "O"
+      count % 2 == 0 ? Player.token("X") : Player.token("O")
   end
 
 
