@@ -73,19 +73,16 @@ def draw?
   return full?(self.board)
 end
 
-def over?(board)
-  if won?(board) != false
+def over?
+  if won?(self.board) != false
     return true
   end
-return draw?(board)
+return draw?(self.board)
 end
 
-def winner(board)
-  win_combo = won?(board)
-  if won?(board)
-    return board[win_combo[0]]
-  end
-return nil
+def winner
+  win_combo = won?(self.board)
+  won? ?   self.board[win_combo[0]] : nil
 end
 
 def play(board)
