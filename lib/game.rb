@@ -70,7 +70,7 @@ def draw?
   if won?(self.board) != false
     return false
   end
-  return full?(self.board)
+  return full?
 end
 
 def over?
