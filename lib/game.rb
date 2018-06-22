@@ -45,7 +45,7 @@ class Game
     index_2 = win_combo[1]
     index_3 = win_combo[2]
 
-    pos_1 = self.board[index_1]
+    pos_1 = self.board.cells[index_1]
     pos_2 = self.board[index_2]
     pos_3 = self.board[index_3]
 
