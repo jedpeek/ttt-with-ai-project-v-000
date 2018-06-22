@@ -5,7 +5,6 @@ module Players
       puts "Please enter 1-9: "
       user_input = gets.strip
       puts "\n"
-
     end
   end
 end

@@ -7,6 +7,7 @@ module Players
           move(board)
         end
       move
+        puts "\n"
     end
   end
 end
