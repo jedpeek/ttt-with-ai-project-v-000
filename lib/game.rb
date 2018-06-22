@@ -29,10 +29,6 @@ class Game
     end
 
 
-      def token
-        Player.token
-      end
-
   def current_player
     count = 0
     self.board.cells.each do |board|
@@ -40,7 +36,7 @@ class Game
         count += 1
       end
       end
-      count % 2 == 0 ? "X" : "O"
+      count % 2 == 0 ? Player.token : "O"
   end
 
 
