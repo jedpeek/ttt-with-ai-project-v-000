@@ -101,8 +101,9 @@ def turn
     if !self.board.valid_move?(move)
        turn
      else
-       self.board.display
-       self.board.update(move, player)
+      self.board.update(move, player)
+      self.board.display
+
      end
 end
 
