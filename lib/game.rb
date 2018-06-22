@@ -103,7 +103,6 @@ def turn
      else
       self.board.update(move, player)
       self.board.display
-
      end
 end
 
