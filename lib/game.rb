@@ -107,7 +107,6 @@ end
     elsif draw? == true
       puts "Cat's Game!"
     end
-    self.board.reset
   end
 
 
