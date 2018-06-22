@@ -5,4 +5,5 @@ require_relative '../config/environment'
 puts "Welcome to Tic-Tac-Toe"
 puts "Please enter the number of players? 1, 2, or 0 for AI"
   input = gets.chomp
-  if input = "1 "
+  if input = "1"
+    
