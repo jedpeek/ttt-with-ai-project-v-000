@@ -72,9 +72,9 @@ def draw?
   return full?
 end
 
-def over?
-won? || draw?
-end
+  def over?
+    won? || draw?
+  end
 
 def winner
   win_combo = won?
