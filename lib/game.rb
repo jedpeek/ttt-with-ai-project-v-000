@@ -88,7 +88,7 @@ end
   player = current_player
   #  move = player.move(@board)
   #    if @board.valid_move?(move)
-  #       @board.update(move, current_player)
+  #       @board.update(move, player)
   #       @board.display
   #       current_player(self.board)
   #    else
