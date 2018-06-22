@@ -7,6 +7,7 @@ puts "Please enter the number of players. 1, 2, or 0 for AI"
   input = gets.strip
   if input == "1"
     Game.new(Players::Human.new("X"), Players::Computer.new("O"), Board.new)
+    Game.play
   elsif input == "2"
     Game.new(Players::Human.new("X"), Players::Human.new("O"), Board.new)
   elsif input == "0"
