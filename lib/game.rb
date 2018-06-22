@@ -87,10 +87,10 @@ end
   def turn
     player = current_player(self.board)
     move = player.move(self.board)
-      if self.board.valid_move?(move)
-        self.board.update(move, player)
-        self.board.display
-        self.current_player
+      if @board.valid_move?(move)
+         @board.update(move, player)
+         @board.display
+         @current_player
       else
         turn
       end
