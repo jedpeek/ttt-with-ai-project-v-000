@@ -57,6 +57,45 @@ class Game
 end
 end
 
+def full?(board)
+  board.each do |i|
+    if i == " "
+      return false
+    end
+  end
+    return true
+end
 
+def draw?(board)
+  if won?(board) != false
+    return false
+  end
+  return full?(board)
+end
 
+def over?(board)
+  if won?(board) != false
+    return true
+  end
+return draw?(board)
+end
+
+def winner(board)
+  win_combo = won?(board)
+  if won?(board)
+    return board[win_combo[0]]
+  end
+return nil
+end
+
+def play(board)
+  until over?(board) == true
+    turn(board)
+  end
+  if won?(board) != false
+    puts "Congratulations #{winner(board)}!"
+  elsif draw?(board) == true
+    puts "Cat's Game!"
+  end
+end
 end
