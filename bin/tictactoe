@@ -10,8 +10,10 @@ puts "Please enter the number of players. 1, 2, or 0 for AI"
     Game.play
   elsif input == "2"
     Game.new(Players::Human.new("X"), Players::Human.new("O"), Board.new)
+    Game.play
   elsif input == "0"
     Game.new(Players::Computer.new("X"), Players::Computer.new("O"), Board.new)
+    Game.play
   else
     puts "Sorry, please enter the number of players. 1, 2, or 0 for AI"
     input = gets.strip
