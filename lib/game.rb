@@ -28,6 +28,9 @@ class Game
       @player_2
     end
 
+    def token
+      
+
 
   def current_player
     count = 0
@@ -36,7 +39,7 @@ class Game
         count += 1
       end
       end
-      count % 2 == 0 ? "X" : "O"
+      count % 2 == 0 ? Player.token : "O"
   end
 
 
