@@ -36,7 +36,7 @@ class Game
         count += 1
       end
       end
-      @board.turn_count % 2 == 0 ? player.token : "O"
+      @board.turn_count % 2 == 0 ? @player_1.token : @player_2.token
   end
 
   def won?
