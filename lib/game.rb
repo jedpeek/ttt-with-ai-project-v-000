@@ -57,7 +57,7 @@ class Game
 end
 
 def full?
-  self.board.each do |i|
+  self.board.cells.each do |i|
     if i == " "
       return false
     end
