@@ -90,7 +90,7 @@ end
       if @board.valid_move?(move)
          @board.update(move, player)
          @board.display
-         @current_player
+         @current_player(self.board)
       else
         turn
       end
