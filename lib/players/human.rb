@@ -1,4 +1,3 @@
-require 'player.rb'
 module Players
   class Human < Player
 
