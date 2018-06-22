@@ -96,10 +96,9 @@ def play(board)
 end
 
 def turn
-  user_input = gets.chomp
-  if self.board.valid_move?(user_input)
-       player = current_player(self.board)
-       player.move(self.board)
+  player = current_player(self.board)
+  player.move(self.board)
+    if self.board.valid_move?(user_input)
        self.board.display
      else
        turn(board)
