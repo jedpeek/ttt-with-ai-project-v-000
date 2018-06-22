@@ -65,7 +65,7 @@ def full?
     return true
 end
 
-def draw?
+def draw?(board)
   if won?(self.board) != false
     return false
   end
