@@ -95,5 +95,8 @@ def play(board)
   end
 end
 
+def turn
+end
+
 
 end
