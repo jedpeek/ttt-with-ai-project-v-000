@@ -89,11 +89,11 @@ end
     move = player.move(self.board)
       if !self.board.valid_move?(move)
          turn
-       else
+      else
         self.board.update(move, player)
         self.board.display
         self.current_player
-       end
+      end
   end
 
   def play
