@@ -98,7 +98,7 @@ end
 def turn
   if self.board.valid_move?(user_input)
        player = current_player(self.board)
-       move(board, index, player)
+       player.move(board, index, player)
        display_board(board)
      else
        turn(board)
