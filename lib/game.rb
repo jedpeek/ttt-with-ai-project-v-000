@@ -55,6 +55,7 @@ class Game
       return false
   end
 end
+end
 
 
 
