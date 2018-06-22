@@ -85,7 +85,7 @@ def winner
 end
 
   #def turn
-  player = current_player
+  #player = current_player
   #  move = player.move(@board)
   #    if @board.valid_move?(move)
   #       @board.update(move, player)
@@ -106,7 +106,6 @@ end
     @board.update(current_move, player)
 
     @board.display
-    puts "\n\n"
   end
 end
 
