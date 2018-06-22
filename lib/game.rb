@@ -58,7 +58,7 @@ end
 end
 
 def full?(board)
-  board.each do |i|
+  self.board.each do |i|
     if i == " "
       return false
     end
