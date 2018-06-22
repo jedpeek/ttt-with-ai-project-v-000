@@ -84,17 +84,17 @@ def winner
   won? ? self.board.cells[win_combo[0]] : nil
 end
 
-  #def turn
-  #player = current_player
-  #  move = player.move(@board)
-  #    if @board.valid_move?(move)
-  #       @board.update(move, player)
-  #       @board.display
-  #     
-  #    else
-  #      turn
-  #    end
-  #end
+  def turn
+  player = current_player
+    move = player.move(@board)
+      if @board.valid_move?(move)
+         @board.update(move, player)
+         @board.display
+
+      else
+        turn
+      end
+  end
 
   def turn
   player = current_player
