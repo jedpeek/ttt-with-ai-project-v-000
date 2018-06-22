@@ -73,10 +73,7 @@ def draw?
 end
 
 def over?
-  if won? != false
-    return true
-  end
-return draw?
+won? || draw?
 end
 
 def winner
