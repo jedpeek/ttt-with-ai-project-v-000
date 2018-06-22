@@ -95,7 +95,7 @@ def play(board)
   end
 end
 
-def turn
+def turn(board)
   player = current_player(self.board)
   move = player.move(self.board)
     if !self.board.valid_move?(move)
