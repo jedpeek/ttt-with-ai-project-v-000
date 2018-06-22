@@ -28,16 +28,15 @@ class Game
       @player_2
     end
 
-    def current_player
-
-  count = 0
-  self.board.cells.each do |board|
-    if board != " "
-      count += 1
-    end
-    end
-  count % 2 == 0 ? "X" : "O"
-end
+  def current_player
+    count = 0
+    self.board.cells.each do |board|
+      if board != " "
+        count += 1
+      end
+      end
+      count % 2 == 0 ? "X" : "O"
+  end
 
 
 end
