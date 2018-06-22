@@ -69,7 +69,7 @@ def draw?
   if won? != false
     return false
   end
-  return full?
+  return @board.full?
 end
 
 def over?
