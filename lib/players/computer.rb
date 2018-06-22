@@ -3,8 +3,7 @@ module Players
   class Computer < Player
 
     def move(board)
-      move = rand(9)
-      until self.board.valid_move(
+      move = rand(9) until self.board.valid_move(move)
     end
   end
 end
