@@ -3,5 +3,5 @@
 require_relative '../config/environment'
 
 puts "Welcome to Tic-Tac-Toe"
-puts "How would you like to play today?"
+puts "How would you like to play today? 1 Player, 2 Player, or AI"
   input = gets.chomp
