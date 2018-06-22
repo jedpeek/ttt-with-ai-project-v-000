@@ -81,7 +81,7 @@ end
 
 def winner
   win_combo = won?
-  won? ? self.board[win_combo[0]] : nil
+  won? ? self.board.cells[win_combo[0]] : nil
 end
 
 def play(board)
