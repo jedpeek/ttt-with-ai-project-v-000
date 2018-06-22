@@ -87,7 +87,7 @@ end
       if @board.valid_move?(move)
          @board.update(move, player)
          @board.display
-         puts "/n/n"
+         puts "\n\n"
 
       else
         turn
