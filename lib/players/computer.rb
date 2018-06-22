@@ -4,6 +4,7 @@ module Players
 
     def move(board)
       move = rand(9) until board.valid_move?(move)
+      move
     end
   end
 end
