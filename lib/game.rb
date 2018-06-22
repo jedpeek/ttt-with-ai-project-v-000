@@ -84,9 +84,9 @@ def winner
   won? ? self.board.cells[win_combo[0]] : nil
 end
 
-def play(board)
+def play
   until over? == true
-    turn(board)
+    turn
   end
   if won? != false
     puts "Congratulations #{winner(board)}!"
