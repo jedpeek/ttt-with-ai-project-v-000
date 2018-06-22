@@ -9,4 +9,5 @@ module Players
         move(board)
     end
   end
+  end
 end
