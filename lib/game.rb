@@ -66,10 +66,7 @@ def full?
 end
 
 def draw?
-  if won? != false
-    return false
-  end
-  return @board.full?
+ @board.full? && !won?
 end
 
 def over?
