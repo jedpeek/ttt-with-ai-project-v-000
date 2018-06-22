@@ -85,7 +85,7 @@ def winner
 end
 
   def turn
-    move = current_player.move(self.board)
+    move = current_player.move(@board)
       if @board.valid_move?(move)
          @board.update(move, current_player)
          @board.display
