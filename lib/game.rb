@@ -55,7 +55,6 @@ class Game
   end
   return false
 end
-end
 
 def full?
   self.board.each do |i|
