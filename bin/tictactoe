@@ -8,6 +8,7 @@ puts "Please enter the number of players. 1, 2, or 0 for AI"
   if input = "1"
     Game.new(player_1, Players::Computer.new("O"), Board.new)
   elsif input = "2"
+    Game.new(player_1, player_2, Board.new)
 
   elsif input = "0"
 
