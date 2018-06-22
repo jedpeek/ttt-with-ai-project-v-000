@@ -108,7 +108,7 @@ end
     @board.display
     puts "\n\n"
   end
-
+end
 
   def play
     until over? == true
