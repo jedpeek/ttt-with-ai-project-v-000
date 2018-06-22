@@ -101,7 +101,7 @@ def turn
     if self.board.valid_move?(user_input)
        self.board.display
      else
-       turn(board)
+       turn
      end
 end
 
