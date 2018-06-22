@@ -96,7 +96,6 @@ def play(board)
 end
 
 def turn
-  user_input = gets.chomp
   if self.board.valid_move?
        player = current_player(self.board)
        player.move(self.board)
