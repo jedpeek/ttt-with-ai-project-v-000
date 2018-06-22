@@ -49,8 +49,12 @@ class Game
     pos_2 = self.board.cells[index_2]
     pos_3 = self.board.cells[index_3]
 
-    (pos_1 == "X" && pos_2 == "X" && pos_3 == "X") || (pos_1 == "O" && pos_2 == "O" && pos_3 == "O") ? win_combo : false
+    if (pos_1 == "X" && pos_2 == "X" && pos_3 == "X") || (pos_1 == "O" && pos_2 == "O" && pos_3 == "O")
+      return win_combo
+    end
   end
+  return false
+end
 end
 
 def full?
