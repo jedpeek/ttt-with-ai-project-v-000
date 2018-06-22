@@ -3,6 +3,7 @@
 require_relative '../config/environment'
 
 puts "Welcome to Tic-Tac-Toe"
+board.display
 puts "Please enter the number of players. 1, 2, or 0 for AI"
   input = gets.strip
   if input == "1"
