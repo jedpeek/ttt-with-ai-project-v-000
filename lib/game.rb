@@ -96,6 +96,13 @@ def play(board)
 end
 
 def turn
+  if valid_move?(board, index)
+       player = current_player(board)
+       move(board, index, player)
+       display_board(board)
+     else
+       turn(board)
+     end
 end
 
 
