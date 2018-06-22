@@ -77,11 +77,11 @@ def over?
   if won? != false
     return true
   end
-return draw?(self.board)
+return draw?
 end
 
 def winner
-  win_combo = won?(self.board)
+  win_combo = won?
   won? ?   self.board[win_combo[0]] : nil
 end
 
