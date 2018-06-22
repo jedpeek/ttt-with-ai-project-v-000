@@ -98,7 +98,7 @@ end
 def turn
   player = current_player(self.board)
   move = player.move(self.board)
-    if !self.board.valid_move?(move)
+    if self.board.valid_move?(move)
        turn
      else
       self.board.update(move, player)
