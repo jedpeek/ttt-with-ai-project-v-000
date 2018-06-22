@@ -95,19 +95,5 @@ def play(board)
   end
 end
 
-def turn
-  puts "Please enter 1-9:"
-  user_input = gets.strip
-
-  index = input_to_index(user_input)
-
-  if self.board.valid_move?(user_input)
-     player = current_player(board)
-     player.move(board, index, player)
-     display_board(board)
-   else
-     turn(board)
-   end
-end
 
 end
