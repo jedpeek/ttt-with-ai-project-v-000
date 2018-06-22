@@ -96,7 +96,7 @@ end
 
 
   def play
-    until !over? == true
+    until over? == true
       turn
     end
     if won? != false
