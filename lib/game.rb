@@ -39,15 +39,15 @@ class Game
       count % 2 == 0 ? "X" : "O"
   end
 
-  def won?(board)
+  def won?
   WIN_COMBINATIONS.each do |win_combo|
     index_1 = win_combo[0]
     index_2 = win_combo[1]
     index_3 = win_combo[2]
 
-    pos_1 = board[index_1]
-    pos_2 = board[index_2]
-    pos_3 = board[index_3]
+    pos_1 = @board[index_1]
+    pos_2 = @board[index_2]
+    pos_3 = @board[index_3]
 
     if (pos_1 == "X" && pos_2 == "X" && pos_3 == "X") || (pos_1 == "O" && pos_2 == "O" && pos_3 == "O")
       return win_combo
