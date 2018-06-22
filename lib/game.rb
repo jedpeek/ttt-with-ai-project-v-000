@@ -92,7 +92,7 @@ end
         self.board.display
         self.current_player
       else
-
+        turn
       end
   end
 
