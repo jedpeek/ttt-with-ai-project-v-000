@@ -72,9 +72,12 @@ def draw?
   return full?
 end
 
-  def over?
-    won? || draw?
+def over?
+  if won? != false
+    return true
   end
+return draw?
+end
 
 def winner
   win_combo = won?
